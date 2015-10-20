@@ -5,7 +5,8 @@ SETLOCAL
 set SCRIPT_DIR=%~dp0
 for %%I in ("%SCRIPT_DIR%..") do set DIR=%%~dpfI
 
-set NODE=%DIR%\node\node.exe
+::set NODE=%DIR%\node\node.exe
+set NODE=D:\Program Files\nodejs0.12.7\node.exe
 set SERVER=%DIR%\src\bin\kibana.js
 set NODE_ENV="production"
 set CONFIG_PATH=%DIR%\config\kibana.yml
